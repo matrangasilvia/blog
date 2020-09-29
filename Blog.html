@@ -1,65 +1,152 @@
 <!doctype html>
 <html lang="it">
-<style>
-#example1 {
-  
- 
-  border: 20px double blue;
-  background: url(foto5.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
- 
-}
-</style>
+
 <style >
 h1,h2 {
   text-shadow: 2px 2px blue;
 }
 </style>
- 
+<style>
+#sfondo {
+background: url("sfondo.png");
+background-repeat: no-repeat;
+background-position: 0 0;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+}
+</style>
 <head>
-<title> Notizie dallo spazio </title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
- 
-<div id="example1">
 
+<body >
+<div id="sfondo">
+<div class="container">
+<ul class="nav nav-tabs">
+  <li class="nav-item dropdown" color="blue" >
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menù</a>
+	<div class="dropdown-menu" >
+      <a class="dropdown-item" href="Blog.html" >Home</a>
+      <a class="dropdown-item" href="pagina1.html">Articolo1</a>
+      <a class="dropdown-item" href="#">Articolo2</a>
+	  <a class="dropdown-item" href="#">Articolo3</a>
+      
+    </div>
+  </li>
+</ul>
 <h1 style="color:#F0F3F4; text-align:center;" > Notizie dallo spazio</h1>
-<h2 style="color:#F0F3F4">Scoperto un nuovo pianeta extrasolare sorprendente</h2>
 
-<p> 
-<h4 style="color:#F0F3F4">
-Si chiama <FONT COLOR= "#7E33FF"> Ltt 9779b </FONT
-<h4 style="color:#F0F3F4"> è un nuovo pianeta extrasolare scoperto di recente, che ha caratteristiche talmente inusuali da far pensare, all'inizio,
- che si trattasse di un... errore. E invece ha pienamente titolo per entrare a far parte della grande famiglia dei pianeti al di fuori del Sistema solare che,
- in qualche modo, sono "unici", per esempio per essere completamente ricoperti d'acqua o per far registrare temperature infernali,
- oppure per il fatto di ruotare a una distanza piccolissima (o grandissima) dalla loro stella... 
- La scoperta è è descritta in un articolo appena pubblicato su Nature Astronomy ed è il frutto di una ricerca di un gruppo di "cercatori di pianeti" dell'Università del Cile. 
-<p> <h4 style="color:#F0F3F4">CHE COPPIA! A individuare Ltt 9779b hanno contribuito sia telescopi sia terrestri sia spaziali. I primi segnali furono colti nel 2018 dal Transiting Exoplanet Survey Satellite (Tess), il telescopio spaziale della Nasa progettato per cercare nuovi pianeti, registrando una periodica diminuzione della luminosità i una stella, chiamata Ltt 9779, distante dalla Terra 260 anni luce.</p>
-</h4>
-</p>
-<p> <h4 style="color:#F0F3F4">
- A completare il lavoro fu,  successivamente, il telescopio dell'Osservatorio Eso La Silla, che si trova nel nord del Cile, il quale confermò che i cali di luminosità della stella erano dovuti al passaggio di un pianeta, che si frapponeva tra la stella stessa e la Terra. Il pianeta fu classificato come "pianeta nettuniano", etichetta attribuita a quella categoria dei pianeti la cui massa è simile o maggiore a quella di Nettuno. Ltt 9779b infatti, ha una massa quasi doppia rispetto a quella di Nettuno, con un diametro (e dunque un volume) leggermente più grande e una densità quasi uguale a quella del pianeta del sistema solare.
- ULTRA... CALDO! Inoltre, come ogni pianeta nettuniano che orbiti vicino alla sua stella ospite e presenti temperature elevate, Ltt 9779b fu definito "hot", bollente. Qualcuno, infine, fece notare che la sua temperatura (oltre 1.700 °C!) andava ben oltre i valori tipici dei pianeti "Hot Neptune" e così si decise di definirlo "Ultra Hot".
-</p>
- 
-<p>
-Ltt 9779b orbita attorno alla sua stella a una distanza molto minore rispetto a tutti i sistemi analoghi, ad appena 2 milioni e 400mila chilometri: per avere un termine di paragone, Mercurio si trova a circa 57 milioni di chilometri dal Sole. Questo fa sì che per compiere un giro completo, Ltt 9779b impieghi appena 19 ore terrestri. Come sottolinea James Jenkins, del Dipartimento di Astronomia dell'Università del Cile: «La scoperta di Ltt 9779b è stata una vera sorpresa, perché la maggior parte dei casi di esopianeti che transitano con periodi inferiori a un giorno, risultano poi essere errori. Questo invece si è confermato reale».
 
-</h4></p> 
 
-<nav>
-<h2 style="color:#F0F3F4">Se vi chiedete da dove ho preso la notizia ? Leggi la fonte:
- <a   style="color:#F0F3F4" href= "http://www.focus.it"> https://www.focus.it/scienza/spazio/nuovo-pianeta-nettuniano-caldo </a>
-<h2 style="color:#F0F3F4" > Per gli appassionati dello spazio ecco qui alcune foto da scaricare:</h1>
 
-<p> <a  style="color:#F0F3F4" href="pagina1.html">Foto1 </a> </p>
-<p> <a style="color:#F0F3F4" href="pagina2.html">Foto2 </a> </p>
-<p> <a style="color:#F0F3F4" href="pagina3.html">Foto3 </a> </p>
-</nav>
+
+
+<div class="card-deck"  >
+ <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="foto1.jpg " width="400"  height ="300" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Scoperto un nuovo pianeta extrasolare sorprendente</h5>
+      <p class="card-text"> è un nuovo pianeta extrasolare scoperto di recente, che ha caratteristiche talmente inusuali da far pensare, all'inizio,
+ che si trattasse di un... errore. E invece ha pienamente titolo per entrare a far parte della grande famiglia dei pianeti al di fuori del Sistema solare </p>
+    </div>
+    <div class="card-footer">
+       <a href="pagina1.html" class="btn btn-primary">Vai all'articolo</a>
+    </div>
+	<footer class="px-2">
+                        <div class="input-group mb-3">
+
+                            <input type="text" class="form-control comment-text" 
+                            placeholder="Commenta" 
+                            aria-label="Commenta" 
+                            aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary send-comment" type="button">invia</button>
+                            </div>
+                          </div>
+
+                          <ul class="list-group list-group-flush comments-container">
+                                <!-- add dinamically 
+                                <li class="list-group-item">Comment text</li>
+    
+                                -->
+                          </ul>
+
+                    </footer>
+  </div>
+
+ <div class="card" style="width: 18rem;">  
+    <img class="card-img-top" src="foto2.jpg" width="400"  height ="300" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Scoperto un nuovo pianeta extrasolare sorprendente</h5>
+      <p class="card-text"> è un nuovo pianeta extrasolare scoperto di recente, che ha caratteristiche talmente inusuali da far pensare, all'inizio,
+ che si trattasse di un... errore. E invece ha pienamente titolo per entrare a far parte della grande famiglia dei pianeti al di fuori del Sistema solare </p>
+    </div>
+    <div class="card-footer">
+       <a href="#" class="btn btn-primary">Vai all'articolo</a>
+    </div>
+	<footer class="px-2">
+                        <div class="input-group mb-3">
+
+                            <input type="text" class="form-control comment-text" 
+                            placeholder="Commenta" 
+                            aria-label="Commenta" 
+                            aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary send-comment" type="button">invia</button>
+                            </div>
+                          </div>
+
+                          <ul class="list-group list-group-flush comments-container">
+                                <!-- add dinamically 
+                                <li class="list-group-item">Comment text</li>
+    
+                                -->
+                          </ul>
+
+                    </footer>
+  </div>
+  
+ <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="foto3.jpg"width="400"  height ="300" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Scoperto un nuovo pianeta extrasolare sorprendente</h5>
+      <p class="card-text"> è un nuovo pianeta extrasolare scoperto di recente, che ha caratteristiche talmente inusuali da far pensare, all'inizio,
+ che si trattasse di un... errore. E invece ha pienamente titolo per entrare a far parte della grande famiglia dei pianeti al di fuori del Sistema solare </p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn btn-primary">Vai all'articolo</a>
+    </div>
+	<footer class="px-2">
+                        <div class="input-group mb-3">
+
+                            <input type="text" class="form-control comment-text" 
+                            placeholder="Commenta" 
+                            aria-label="Commenta" 
+                            aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary send-comment" type="button">invia</button>
+                            </div>
+                          </div>
+
+                          <ul class="list-group list-group-flush comments-container">
+                               
+                          </ul>
+
+                    </footer>
+  </div>
+</div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="main.js"></script>    
 
 
 </body>
 </html>
-
-
