@@ -39,11 +39,6 @@ background-size: cover;
 </ul>
 <h1 style="color:#F0F3F4; text-align:center;" > Notizie dallo spazio</h1>
 
-
-
-
-
-
 <div class="card-deck"  >
  <div class="card" style="width: 18rem;">
 <img class="card-img-top" src="foto1.jpg " width="400"  height ="300" alt="Card image cap">
@@ -140,12 +135,77 @@ background-size: cover;
 </div>
 </div>
 
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Aggiungi nuovo articolo</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"  >scrivi un nuovo articolo</h5>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label title-text" > titolo</label>
+             <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label article-text">Corpo del testo</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+	   <div class="input-group mb-3">
+
+                            <input type="text" class="form-control comment-text" 
+                            placeholder="Commenta" 
+                            aria-label="Commenta" 
+                            aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">chiudi</button>
+						<button type="button" class="btn btn-primary ">salva</button>
+                            </div>
+                          </div>
+
+                          <ul class="list-group list-group-flush comments-container">
+                                <!-- add dinamically 
+                                <li class="list-group-item">Comment text</li>
+    
+                                -->
+                          </ul>
+
+                    </footer>
+	  
+	  
+	  
+      
+    
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  <script src="main.js"></script>    
+
 
 
 </body>

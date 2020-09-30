@@ -14,5 +14,16 @@ $(document).ready(function () {
         commentContainer.append(commentRow);
 
     });
+	$("#savePostBtn").click(addPost);
+	});
 
-});
+function addPost() {
+    var title = $("#postTitle").val();
+    var body = $("#postBody").val();
+    var post = new Post(title, body, true);
+	var contain=$(".container");
+   var testo='<div class="card" style="width: 18rem;"><img class="card-img-top" src="..." alt="Card image cap"><div class="card-body"><h5 class="card-title">'+post.title+'</h5><p class="card-text">'+post.body+'</p></div</div>'
+ 
+    contain.append(testo);
+	
+}
