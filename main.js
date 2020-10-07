@@ -1,3 +1,6 @@
+var posts = [];
+
+
 $(document).ready(function () {
 
     var users = [
@@ -14,16 +17,47 @@ $(document).ready(function () {
         commentContainer.append(commentRow);
 
     });
+	  for(var i = 0; i< posts.length; i++){
+        var post = posts[i];
+        if(post.public === true){
+            createUIPost(post);
+			else(post.public == false) post.modal("hide");
+        }
+    }
 	$("#savePostBtn").click(addPost);
 	});
+	function createUIPost(post){
+    var postContainer = $("#postContainer").clone();
+    postContainer.css("display","block");
+    postContainer.attr("id","");
+    postContainer.addClass("class","postContainer");
+		
+    var postHeader = postContainer.find(".card-header");
+    var postBody = postContainer.find(".card-text");
 
+    postHeader.html(post.title);
+    postBody.html(post.body);
+    $("#postsRow").append(postContainer);
+
+}
+function closeModal(){
+    $("#newPostModal").modal("hide");
+}
+
+function resetModal(){
+    $("#postTitle").val("");
+    $("#postBody").val("");
+
+}
 function addPost() {
     var title = $("#postTitle").val();
     var body = $("#postBody").val();
-    var post = new Post(title, body, true);
-	var contain=$(".container");
-   var testo='<div class="card" style="width: 18rem;"><img class="card-img-top" src="..." alt="Card image cap"><div class="card-body"><h5 class="card-title">'+post.title+'</h5><p class="card-text">'+post.body+'</p></div</div>'
- 
-    contain.append(testo);
+	 var public = $("publicCheck").val();
+    var featured = $("featuredCheck").val();
+	resetModal();
+	var post = new Post(title,body,public,featured);
+    createUIPost(post);
+
+	
 	
 }
